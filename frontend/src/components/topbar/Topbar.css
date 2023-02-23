@@ -1,0 +1,117 @@
+.topbarContainer {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: static;
+  top: 0;
+  z-index: 100;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+.topbarCenter {
+  flex: 5;
+}
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 26px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logoString {
+  font-size: 26px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.searchbar {
+  width: 100%px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  font-size: 18px !important;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.searchInput {
+  border: none;
+  width: 80%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.topbarItemIcons {
+  display: flex;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  color: aliceblue;
+  cursor: pointer;
+  position: relative;
+  margin-top: 5px;
+}
+
+.topbarIconItem2 {
+  font-size: 26px;
+  margin-top: 5px;
+  cursor: pointer;
+  position: relative;
+  -moz-text-shadow: 2px 2px 8px rgba(107, 107, 107, 0.44);
+  -webkit-text-shadow: 2px 2px 8px rgba(107, 107, 107, 0.44);
+  -ms-text-shadow: 2px 2px 8px rgba(107, 107, 107, 0.44);
+  text-shadow: 2px 2px 8px rgba(107, 107, 107, 0.44);
+}
+
+.topbarIconBadge {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: aliceblue;
+  background-color: rgb(252, 38, 38);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.topbarImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+}

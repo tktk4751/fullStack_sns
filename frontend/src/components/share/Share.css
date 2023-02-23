@@ -1,0 +1,111 @@
+.share {
+  width: 100%;
+  height: 170px;
+  border-radius: 5px;
+  box-shadow: 1px 7px 15px -5px #747474;
+}
+
+.shareWrapper {
+  padding: 10px;
+}
+
+.shareTop {
+  display: flex;
+  align-items: center;
+}
+
+.shareProfileImg {
+  width: 50;
+  height: 50px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin-right: 10px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.shareInput {
+  border: none;
+  width: 100%;
+}
+
+.shareInput:focus {
+  outline: none;
+}
+
+.shareHr {
+  margin: 25px;
+}
+
+.shareButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions {
+  display: flex;
+  margin-left: 20px;
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.shareIcon {
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.shareOptionText {
+  font-size: 16px;
+  padding-top: 5px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.shareButton {
+  background-color: #444141;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.shareButton:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 12%,
+    rgba(253, 29, 29, 1) 68%,
+    rgba(252, 176, 69, 1) 98%
+  );
+  animation: slidernbw 5s linear infinite;
+  color: #000;
+}
+
+@keyframes slidernbw {
+  to {
+    background-position: 20vw;
+  }
+}
